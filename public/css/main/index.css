@@ -1,0 +1,116 @@
+* {
+  font-family: 'Acme', sans-serif;
+  font-family: 'Heebo', sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+body {
+  background-color: rgb(255, 245, 245);
+}
+
+h1 {
+  font-size: 35px;
+  color: rgb(31, 31, 31);
+}
+
+h2 {
+  font-size: 25px;
+  color: rgb(61, 61, 61);
+}
+
+p {
+  font-weight: 23px;
+  color: rgb(66, 66, 66);
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-gap: 10px 50px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+}
+
+.logo img{
+  width: 100%;
+  background-color: transparent;
+  margin-left: 10px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+.logo h1 {
+  background-color: transparent;
+  padding-top: 25px;
+}
+
+.menu {
+  width: 200px;
+  height: calc(95% - 200px);
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgb(196, 196, 196);
+  position: absolute;
+  transition: 0.4s;
+}
+
+#menuClose {
+  display: none;
+}
+
+.menu ion-icon {
+  font-size: 50px;
+  padding-top: 20px;
+  transition: 0.7s;
+  margin: 0 auto;
+}
+
+.menu ion-icon:hover {
+  font-size: 55px;
+}
+
+.menu div {
+  background-color: rgb(223, 223, 223);
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.menu div a {
+  text-decoration: none;
+  color: white;
+}
+
+.content {
+  width: 87%;
+  min-height: 300px;
+  margin: 0 auto;
+  margin-left: 220px;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgb(196, 196, 196);
+  margin-bottom: 20px;
+}
+
+.items {
+  font-size: 50px;
+  width: 300px;
+  padding: 30px 0px;
+  background-color: rgb(223, 223, 223);
+  display: inline-block;
+  text-align: center;
+  margin-left: 20px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}

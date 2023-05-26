@@ -1,0 +1,117 @@
+.topProducts {
+  margin-left: 30px;
+}
+
+.classInputProducts {
+  width: 98%;
+  padding-bottom: 35px;
+  padding-top: 0px;
+}
+
+.classInputProducts input[type=button]{
+  float: left;
+  padding: 5px 20px;
+  font-size: 20px;
+  background-color: rgb(40, 40, 40);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.classInputProducts input[type=button]:hover {
+  box-shadow: 0px 0px 10px rgb(110, 110, 110);
+  color: silver;
+}
+
+.classInputProducts input[type=search]{
+  float: right;
+  padding: 5px 20px;
+  font-size: 20px;
+  background-color: rgb(40, 40, 40);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  transition: 0.7s;
+}
+
+.tableProducts table {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-top: 30px;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.tableProducts th{
+  background-color: rgb(80, 80, 80);
+  color: white;
+  text-align: center;
+}
+
+.tableProducts td {
+  text-indent: 20px;
+}
+
+.tableProducts tr:hover td{
+  background-color: rgb(252, 237, 237);
+  cursor: default;
+}
+
+.trash {
+  text-indent: 0px!important;
+  text-align: center;
+}
+
+.formStoreProduct {
+  width: 98%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-gap: 30px 0px;
+  margin-bottom: 50px;
+}
+
+.formStoreProduct p{
+  text-indent: 5px;
+}
+
+.formStoreProduct input {
+  font-size: 20px;
+  text-indent: 20px;
+}
+
+.buttonStore {
+  width: 100%;
+  margin: 0 auto;
+  text-align: right;
+}
+
+#price {
+  text-indent: 55px;
+}
+
+.formStoreProduct span {
+  background-color: silver;
+  position: absolute;
+  margin-top: 326px;
+  margin-left: 151px;
+  font-size: 25px;
+  padding: 9.3px 10px;
+  cursor: default;
+}
+
+.buttonStore input {
+  margin-right: 20px;
+  padding: 5px 20px;
+  font-size: 20px;
+  background-color: rgb(40, 40, 40);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  transition: 0.7s;
+  cursor: pointer;
+}
