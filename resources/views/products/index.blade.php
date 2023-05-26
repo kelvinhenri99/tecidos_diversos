@@ -21,7 +21,7 @@
     @foreach ($data as $products)
       <tr>
         <td>  {{ $products['id'] }} </td>
-        <td> <a href="/products-get/{{ $products['id'] }}">{{ $products['sku'] }}</a> </td>
+        <td> <a href="/products/show/{{ $products['id'] }}">{{ $products['sku'] }}</a> </td>
         <td> {{ $products['descricao'] }} </td>
         <td> R$ {{ $products['valorCusto'] }} </td>
         <td class="trash"> <a href="{{ route('delete', $products['id']) }}"><ion-icon name="trash"></ion-icon></a> </td>

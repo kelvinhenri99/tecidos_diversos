@@ -10,14 +10,16 @@
   </head>
   <body>
     <div class="logo">
-      <img src="../../imgs/logo.jpg" alt="">
+      <a href="/">
+        <img src="../../imgs/logo.jpg" alt="">
+      </a>
       <h1>TECIDOS DIVERSOS LTDA</h1>
     </div>
     <div class="menu" id="menu">
       <ion-icon name="reorder-four" id="menuClose"></ion-icon>
       <ion-icon name="reorder-two" id="menuOpen"></ion-icon>
       <div id="modalOpen">
-        <a href="/products">
+        <a href="/products/index">
           <p>Produto</p>
         </a>
       </div>

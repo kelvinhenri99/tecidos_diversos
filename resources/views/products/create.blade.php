@@ -6,7 +6,7 @@
 </div>
 
 <div class="productsStore">
-  <form action="/products/store" method="post">
+  <form action="{{route('store')}}" method="post">
     @csrf
     <div class="formStoreProduct">
       <p>ID</p>
@@ -22,7 +22,7 @@
       <span>RS</span>
     </div>
     <div class="buttonStore">
-      <a href="/products"><input type="button" value="Voltar"></a>
+      <a href="/products/index"><input type="button" value="Voltar"></a>
       <input type="submit" value="Gravar">
     </div>
   </form>

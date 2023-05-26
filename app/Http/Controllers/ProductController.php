@@ -8,12 +8,12 @@ use Illuminate\Support\Facades\Route;
 
 class ProductController extends Controller
 {
-  public function products() {
+  public function index() {
 
     $response = Http::get('http://54.94.96.111:63616/produto');
     $data = $response->json();
 
-    return view('products', compact('data'));
+    return view('products.index', compact('data'));
   }
 
   public function create() {
@@ -31,15 +31,15 @@ class ProductController extends Controller
       'tipo'            =>  'PROPRIO',
     ]);
 
-    return redirect()->route('products');
+    return redirect()->route('index');
   }
 
-  public function getProduct($id) {
+  public function show($id) {
 
     $response = Http::get('http://54.94.96.111:63616/produto/'.$id);
     $data = $response->json();
 
-    return view('products-get', compact('data'));
+    return view('products.show', compact('data'));
   }
 
   public function update(Request $request) {
@@ -53,13 +53,13 @@ class ProductController extends Controller
       'tipo'            =>  'PROPRIO',
     ]);
 
-    return redirect()->route('products');
+    return redirect()->route('index');
   }
 
   public function delete($id) {
 
     $response = Http::delete('http://54.94.96.111:63616/produto/'.$id);
 
-    return redirect()->route('products');
+    return redirect()->route('index');
   }
 }
